@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api *)",
+      "Bash(curl -s https://api.github.com/repos/phuryn/pm-skills/contents)",
+      "Bash(python -c \"import sys,json; [print\\(x['name']\\) for x in json.load\\(sys.stdin\\)]\")",
+      "Bash(curl -s https://raw.githubusercontent.com/phuryn/pm-skills/main/README.md)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(claude plugin *)",
+      "Bash(pip install *)",
+      "Bash(python -m streamlit run app.py)",
+      "Bash(python -m streamlit run app.py --server.headless true)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(taskkill /F /IM python.exe)",
+      "Bash(python -c ' *)",
+      "WebFetch(domain:21st.dev)",
+      "Read(//c/Users/gaura/AppData/Roaming/Claude/local-agent-mode-sessions/skills-plugin/f19e6cdb-a301-4acf-93df-f86c942c6b09/02709106-59bc-4562-b387-107c3d81c768/skills/web-artifacts-builder/**)",
+      "Bash(bash scripts/init-artifact.sh teacher-model-app)",
+      "Bash(npm create *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(python -m streamlit --version)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(where python *)",
+      "Bash(python -c \"import sys; print\\(sys.executable\\)\")",
+      "Bash(taskkill /F /IM python3.exe)",
+      "Bash(netstat -ano)",
+      "Bash(findstr :8501)",
+      "Bash(taskkill /F /PID 14592)",
+      "Bash(cmd /c \"taskkill /F /PID 14592\")",
+      "Bash(python -c \"import cairosvg; print\\('cairosvg ok'\\)\")",
+      "Bash(python -c \"import svglib; print\\('svglib ok'\\)\")",
+      "Bash(python -c \"from PIL import Image; print\\('pillow ok'\\)\")",
+      "Bash(gh auth *)",
+      "Bash(git --version)"
+    ]
+  }
+}
