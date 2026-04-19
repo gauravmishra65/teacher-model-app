@@ -5,6 +5,16 @@ import streamlit as st
 from dotenv import load_dotenv
 
 load_dotenv(encoding="utf-8", override=True)
+
+# On Streamlit Cloud, secrets are in st.secrets — copy them into os.environ
+# so the rest of the app (which uses os.environ) works unchanged.
+for _k in ("GROQ_API_KEY", "GEMINI_API_KEY", "ANTHROPIC_API_KEY"):
+    if _k not in os.environ:
+        try:
+            os.environ[_k] = st.secrets[_k]
+        except Exception:
+            pass
+
 sys.path.insert(0, os.path.dirname(__file__))
 
 from models.auto_select import get_best_model, list_available
